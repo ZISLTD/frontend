@@ -16,7 +16,7 @@ const ChooseUs = () => {
                 </Caption>
                 <h1 className="quicksand-font font-bold text-2xl">Why You Should Chose Us!</h1>
                 <p className="font-medium leading-8 text-sm text-[#666C89] lg:w-[90%] text-justify">
-                    At Zocroms Integrated Services Ltd, we believe in giving 110% standing as a leading provider of comprehensive Supply Chain Solutions to organizations Our success is driven by a deep understanding of the market and the exceptional expertise of our dedicated team
+                    At Zocroms Integrated Services Ltd, we believe in giving 100% standing as a leading provider of comprehensive supply chain solutions to organizations Our success is driven by a deep understanding of the market and the exceptional expertise of our dedicated team
                 </p>
                 <div className="grid md:grid-cols-2 gap-x-3 gap-y-6">
                     {chooseArr.map((item) => (

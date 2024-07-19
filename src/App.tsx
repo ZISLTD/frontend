@@ -3,7 +3,6 @@ import About from "./components/About"
 import ChooseUs from "./components/ChooseUs"
 import Contact from "./components/Contact"
 import CoreValues from "./components/CoreValues"
-import Founder from "./components/Founder"
 import Hero from "./components/Hero"
 import MarketServed from "./components/MarketServed"
 import Services from "./components/Services"
@@ -38,9 +37,6 @@ function App() {
           <MarketServed />
         </UseIntersectAnimate>
       </div>
-      <UseIntersectAnimate setIsNavActive={setIsNavActive} navValue="">
-        <Founder />
-      </UseIntersectAnimate>
       <div id="Contact">
         <UseIntersectAnimate setIsNavActive={setIsNavActive} navValue="Contact">
           <Contact />

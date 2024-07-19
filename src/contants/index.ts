@@ -60,7 +60,7 @@ export const services = [
     },
     {
         "icon": "/images/services/construction-tools.svg",
-        "text": "Construction Scaffolding Rentals"
+        "text": "Scaffolding Rentals"
     },
 ]
 

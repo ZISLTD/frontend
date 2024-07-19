@@ -8,9 +8,9 @@ const About = () => {
         </Caption>
         <h1 className="quicksand-font font-bold text-xl md:text-2xl">Safe & Reliable Supply <br /> Chain Solutions</h1>
         <p className="font-medium leading-8 text-base md:text-[18px] text-justify">
-            Zocroms Integrated Services Ltd, strategically located in Ogun State, Nigeria stands out as a premier provider of comprehensive Supply Chain Solutions With a focus on efficiency, reliability, and cost effectiveness, we cater to diverse industries such as manufacturing, transportation, and oil gas.
+            Zocroms Integrated Services Ltd, strategically located in Ogun State, Nigeria stands out as a premier provider of comprehensive supply chain solutions with focus on efficiency, reliability, and cost effectiveness, we cater for diverse industries such as manufacturing, transportation, and oil gas.
             <br /><br />
-            Our commitment to continuous improvement and innovation ensures that we deliver exceptional service and solutions, driving growth and efficiency for our clients From logistics and transportation to consulting, our tailored services are designed to meet the dynamic needs of today's industries, supporting our clients on their journey towards operational excellence and delivering customized Supply Chain Solutions that optimize logistics operations and streamline supply chain processes
+            Our commitment to continuous improvement and innovation ensures that we deliver exceptional service and solutions, driving growth and efficiency for our clients from logistics and transportation to consulting, our tailored services are designed to meet the dynamic needs of today's industries, supporting our clients on their journey towards operational excellence and delivering customized Supply Chain Solutions that optimize logistics operations and streamline supply chain processes
         </p>
         <Caption styles="bg-[#E8E8E8] text-[12px] rubik-font h-[18px] text-center">
             Who we are

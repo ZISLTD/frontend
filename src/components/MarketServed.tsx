@@ -38,7 +38,7 @@ const MarketServed = () => {
               key={sponsor} 
               src={sponsor} 
               alt="Partners" 
-              className={`${isBatok ? "w-[50px] h-[50px] md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px]" : "w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[100px]"} mix-blend-luminosity hover:mix-blend-normal cursor-pointer`}
+              className={`${isBatok ? "w-[50px] h-[50px] md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px]" : "w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[100px]"} lg:mix-blend-luminosity hover:mix-blend-normal cursor-pointer`}
             />
           })}
         </section>
