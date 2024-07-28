@@ -60,22 +60,22 @@ const Contact = () => {
               />
               <div>
                 <p>Contact Us</p>
-                <p className="font-bold">Nigeria:</p>
+                <p className="font-bold mt-2">Nigeria:</p>
                 <div className="flex gap-2 flex-wrap gap-y-0">
                   <p>13 Primrose Street,</p>
                   <p>Banky Peace Estate,</p>
                   <p>Magboro Ogun State</p>
                 </div>
-                <div className="flex gap-2 flex-wrap gap-y-0 mt-2 items-center">
+                <div className="flex gap-2 flex-wrap gap-y-0 items-center">
                   <a href="tel:+2348037600173">+234 803 760 0173,</a>
                   <a href="tel:+2348033731131">+234 803 373 1131</a>
                 </div>
-                <p className="font-bold">Canada:</p>
+                <p className="font-bold mt-2">Canada:</p>
                 <div className="flex gap-2 flex-wrap gap-y-0">
                   <p>Natronia Trail,</p>
                   <p>Brampton Ontario</p>
                 </div>
-                <div className="flex gap-2 flex-wrap gap-y-0 items-center mt-2">
+                <div className="flex gap-2 flex-wrap gap-y-0 items-center">
                   <a href="tel:+13653553563">+1 365 355 3563</a>
                 </div>
               </div>
