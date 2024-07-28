@@ -67,11 +67,6 @@ const Contact = () => {
                   <p>Magboro Ogun State</p>
                 </div>
                 <div className="flex gap-2 flex-wrap gap-y-0 mt-2 items-center">
-                  <img
-                    src="/icons/phone.svg"
-                    alt="Phone Icon"
-                    className="w-[30px] h-[30px]"
-                  />
                   <a href="tel:+2348037600173">+234 803 760 0173,</a>
                   <a href="tel:+2348033731131">+234 803 373 1131</a>
                 </div>
@@ -81,11 +76,6 @@ const Contact = () => {
                   <p>Brampton Ontario</p>
                 </div>
                 <div className="flex gap-2 flex-wrap gap-y-0 items-center mt-2">
-                  <img
-                    src="/icons/phone.svg"
-                    alt="Phone Icon"
-                    className="w-[30px] h-[30px]"
-                  />
                   <a href="tel:+13653553563">+1 365 355 3563</a>
                 </div>
               </div>
