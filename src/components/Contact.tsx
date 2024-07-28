@@ -43,7 +43,37 @@ const Contact = () => {
                 <h1 className="rubik-font font-bold text-xl md:text-2xl text-white">Get in touch with us</h1>
                 <p className="font-normal">Reach out to us for tailored solutions and expert support in navigating your logistics needs.</p>
                 <div className="space-y-6 font-normal">
-                    <section className="flex gap-4 items-center break-words">
+                    <section className="flex gap-4">
+                        <img 
+                            src="/icons/phone.svg" 
+                            alt="Phone Icon"
+                            className="w-[60px] h-[60px]" 
+                        />
+                        <div>
+                            <p>Contact Us</p>
+                            <p className="font-bold">Nigeria:</p>
+                            <div className="flex gap-2 flex-wrap gap-y-0">
+                                <p>13 Primrose Street,</p>
+                                <p>Banky Peace Estate,</p>
+                                <p>Magboro Ogun State</p>
+                            </div>
+                            <p className="font-bold">Phone:</p>
+                            <div className="flex gap-2 flex-wrap gap-y-0">
+                                <a href="tel:+2348037600173">+234 803 760 0173,</a>
+                                <a href="tel:+2348033731131">+234 803 373 1131,</a>
+                            </div>
+                            <p className="font-bold">Canada:</p>
+                            <div className="flex gap-2 flex-wrap gap-y-0">
+                                <p>Natronia Trail,</p>
+                                <p>Brampton Ontario</p>
+                            </div>
+                            <p className="font-bold">Phone:</p>
+                            <div className="flex gap-2 flex-wrap gap-y-0">
+                                <a href="tel:+13653553563">+1 365 355 3563</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="flex gap-4 md:items-center break-words">
                         <img 
                             src="/icons/mail.svg" 
                             alt="Mail Icon"
@@ -54,22 +84,7 @@ const Contact = () => {
                             <p>zocromsintegratedservices@hotmail.com</p>
                         </div>
                     </section>
-                    <section className="flex gap-4 items-center">
-                        <img 
-                            src="/icons/phone.svg" 
-                            alt="Phone Icon"
-                            className="w-[60px] h-[60px]" 
-                        />
-                        <div>
-                            <p>Call Us</p>
-                            <div className="flex gap-2 flex-wrap gap-y-0">
-                                <a href="tel:+2348037600173">+234 803 760 0173,</a>
-                                <a href="tel:+2348033731131">+234 803 373 1131,</a>
-                                <a href="tel:+13653553563">+1 365 355 3563</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section className="flex gap-4 items-center">
+                    <section className="flex gap-4 md:items-center">
                         <img 
                             src="/icons/time.svg" 
                             alt="Clock Icon"
@@ -77,28 +92,7 @@ const Contact = () => {
                         />
                         <div>
                             <p>Mon - Fri 9.00 - 17.00</p>
-                            <p>Sunday Closed</p>
-                        </div>
-                    </section>
-                    <section className="flex gap-4">
-                        <img 
-                            src="/icons/location.svg" 
-                            alt="Location Icon"
-                            className="w-[60px] h-[60px]" 
-                        />
-                        <div>
-                            <p>Address</p>
-                            <div className="flex gap-2 flex-wrap gap-y-0">
-                                <p>Nigeria:</p>
-                                <p>13 Primrose Street,</p>
-                                <p>Banky Peace Estate,</p>
-                                <p>Magboro Ogun State</p>
-                            </div>
-                            <div className="flex gap-2 flex-wrap">
-                                <p>Canada:</p>
-                                <p>Natronia Trail,</p>
-                                <p>Brampton Ontario</p>
-                            </div>
+                            <p>Sat & Sun Closed</p>
                         </div>
                     </section>
                 </div>
