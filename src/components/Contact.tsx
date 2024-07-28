@@ -12,12 +12,11 @@ const Contact = () => {
         e.preventDefault()
         try {  
             setLoading(true)
-            const mail = await fetch("http://localhost:8080/mail", {
+            const mail = await fetch(`${import.meta.env.VITE_API}/mail`, {
                 method: "POST",
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(mailData)
             })
-            console.log("hii")
 
             if(mail.status == 200){ 
                 setLoading(false)
@@ -44,18 +43,18 @@ const Contact = () => {
                 <h1 className="rubik-font font-bold text-xl md:text-2xl text-white">Get in touch with us</h1>
                 <p className="font-normal">Reach out to us for tailored solutions and expert support in navigating your logistics needs.</p>
                 <div className="space-y-6 font-normal">
-                    <section className="flex gap-4 items-center">
+                    <section className="flex gap-4 items-center break-words">
                         <img 
                             src="/icons/mail.svg" 
                             alt="Mail Icon"
                             className="w-[60px] h-[60px]" 
                         />
-                        <div>
+                        <div className="w-[75%] md:w-full">
                             <p>Email</p>
-                            <p>contact@logistics.com</p>
+                            <p>zocromsintegratedservices@hotmail.com</p>
                         </div>
                     </section>
-                    <a href="tel:+2348037600173" className="flex gap-4 items-center">
+                    <section className="flex gap-4 items-center">
                         <img 
                             src="/icons/phone.svg" 
                             alt="Phone Icon"
@@ -63,18 +62,43 @@ const Contact = () => {
                         />
                         <div>
                             <p>Call Us</p>
-                            <p>+234 803 760 0173</p>
+                            <div className="flex gap-2 flex-wrap gap-y-0">
+                                <a href="tel:+2348037600173">+234 803 760 0173,</a>
+                                <a href="tel:+2348033731131">+234 803 373 1131,</a>
+                                <a href="tel:+13653553563">+1 365 355 3563</a>
+                            </div>
                         </div>
-                    </a>
+                    </section>
                     <section className="flex gap-4 items-center">
                         <img 
                             src="/icons/time.svg" 
-                            alt="Mail Icon"
+                            alt="Clock Icon"
                             className="w-[60px] h-[60px]" 
                         />
                         <div>
-                            <p>Mon - Sat 9.00 - 18.00 Sunday Closed</p>
+                            <p>Mon - Fri 9.00 - 17.00</p>
                             <p>Sunday Closed</p>
+                        </div>
+                    </section>
+                    <section className="flex gap-4">
+                        <img 
+                            src="/icons/location.svg" 
+                            alt="Location Icon"
+                            className="w-[60px] h-[60px]" 
+                        />
+                        <div>
+                            <p>Address</p>
+                            <div className="flex gap-2 flex-wrap gap-y-0">
+                                <p>Nigeria:</p>
+                                <p>13 Primrose Street,</p>
+                                <p>Banky Peace Estate,</p>
+                                <p>Magboro Ogun State</p>
+                            </div>
+                            <div className="flex gap-2 flex-wrap">
+                                <p>Canada:</p>
+                                <p>Natronia Trail,</p>
+                                <p>Brampton Ontario</p>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -134,8 +158,18 @@ const Contact = () => {
                         /> 
                         : "Submit Message"}
                     </Button>
+                    
 
                 </form>
+                <section className="w-[fit-content]">  
+                    <a href="https://www.linkedin.com/company/zocroms-integrated-services-limited/" target="_blank">     
+                        <img 
+                            src="/icons/linkedin.svg" 
+                            alt="Linkedin Icon"
+                            className="w-[50px] h-[50px]" 
+                        />
+                    </a>      
+                </section>
             </section>
         </div>
     </div>
