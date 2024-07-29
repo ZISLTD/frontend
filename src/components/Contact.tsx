@@ -21,6 +21,7 @@ const Contact = () => {
       alert("Invalid number format");
       return;
     }
+
     try {
       setLoading(true);
       const mail = await fetch(`${import.meta.env.VITE_API}/mail`, {
@@ -28,6 +29,8 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(mailData),
       });
+
+      const response = await mail.json()
 
       if (mail.status == 200) {
         setLoading(false);
@@ -40,6 +43,8 @@ const Contact = () => {
         alert("Mail Sent");
         return;
       }
+
+      alert(response.message)
     } catch (error) {
       setLoading(false);
       alert(error);
@@ -146,7 +151,7 @@ const Contact = () => {
                 country={"ng"}
                 value={mailData.phone_number}
                 onChange={(phone) =>
-                  setMailData({ ...mailData, phone_number: `+${phone}` })
+                  setMailData({ ...mailData, phone_number: phone })
                 }
                 inputProps={{
                   name: "phone",
