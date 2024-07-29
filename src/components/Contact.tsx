@@ -1,7 +1,10 @@
 import { FormEvent, useState } from "react";
 import Button from "./shared/Button";
 import Caption from "./shared/Caption";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
+const phoneRegex = /^\d{7,15}$/;
 const Contact = () => {
   const [mailData, setMailData] = useState({
     name: "",
@@ -13,6 +16,11 @@ const Contact = () => {
 
   const sendMail = async (e: FormEvent) => {
     e.preventDefault();
+
+    if (!phoneRegex.test(mailData.phone_number)) {
+      alert("Invalid number format");
+      return;
+    }
     try {
       setLoading(true);
       const mail = await fetch(`${import.meta.env.VITE_API}/mail`, {
@@ -133,19 +141,26 @@ const Contact = () => {
                 setMailData({ ...mailData, email: e.target.value })
               }
             />
-            <input
-              type="tel"
-              className="bg-transparent border-[1px] outline-none w-full md:w-[320px] lg:w-[260px] py-3 px-3 text-white"
-              placeholder="+234 000 000 0000"
-              required
-              name="number"
-              id="number"
-              value={mailData.phone_number}
-              pattern="[+][0-9]{3} [0-9]{3} [0-9]{3} [0-9]{4}"
-              onChange={(e) =>
-                setMailData({ ...mailData, phone_number: e.target.value })
-              }
-            />
+            <div className="bg-transparent w-full md:w-[320px] lg:w-[260px] text-white">
+              <PhoneInput
+                country={"ng"}
+                value={mailData.phone_number}
+                onChange={(phone) =>
+                  setMailData({ ...mailData, phone_number: `+${phone}` })
+                }
+                inputProps={{
+                  name: "phone",
+                  required: true,
+                  autoFocus: true,
+                }}
+                inputStyle={{
+                  width: "inherit",
+                  height: "48px",
+                  backgroundColor: "transparent",
+                  borderRadius: "0%",
+                }}
+              />
+            </div>
             <textarea
               className="bg-transparent border-[1px] outline-none w-full h-32 py-3 px-3 text-white"
               placeholder="Message"
